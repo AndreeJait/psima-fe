@@ -1,0 +1,53 @@
+.navbar-top > .navbar-custom {
+  margin-left: auto;
+
+  cursor: pointer;
+  position: relative;
+}
+.navbar-top > .navbar-custom > * {
+  user-select: none;
+}
+.navbar-top > .navbar-custom > .image-wrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+.navbar-top > .navbar-custom > .image-wrap > .status {
+  width: 15px;
+  height: 15px;
+  background: rgb(179, 179, 179);
+  position: absolute;
+  left: 0px;
+  top: 35px;
+  border-radius: 50%;
+}
+.navbar-top > .navbar-custom > .image-wrap > .active {
+  background: rgb(60, 209, 134);
+}
+.navbar-top > .navbar-custom > .image-wrap > img {
+  width: 100%;
+}
+.navbar-top > .navbar-custom > .item-custom-dropdown.hide {
+  height: 0px;
+  padding: 0px;
+}
+.navbar-top > .navbar-custom > .item-custom-dropdown {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 50px;
+  background: white;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: hidden;
+}
+.navbar-top > .navbar-custom > .item-custom-dropdown > .item-custom-link {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar-top > .navbar-custom > .item-custom-dropdown > .item-custom-link:hover {
+  background: var(--primary-purple);
+  color: white;
+}

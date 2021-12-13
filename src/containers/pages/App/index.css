@@ -5,3 +5,123 @@ body {
   padding: 0px;
   margin: 0px;
 }
+:root {
+  --black: #000000;
+  --primary: #eaebef;
+  --secondary: #c4c4c4;
+  --ligth-blue: #2d86d8;
+  --primary-purple: #838ba4;
+  --error: #b91717;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(190, 190, 190);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(121, 121, 121);
+}
+
+.wrap-box-content {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrap-box-content > .navbar-side {
+  width: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--primary-purple);
+}
+.wrap-box-content > .wrap-content {
+  width: calc(100% - 250px);
+}
+
+.wrap-box-content > .wrap-content > .navbar-top {
+  width: 100%;
+  background: var(--primary-purple);
+  display: flex;
+  padding: 5px 10px;
+  position: relative;
+  height: 60px;
+}
+
+.wrap-box-content > .wrap-content > .default-page {
+  height: calc(100vh - 60px);
+  width: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.wrap-box-content > .wrap-content > .default-page > .header-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 25px;
+}
+.wrap-box-content
+  > .wrap-content
+  > .default-page
+  > .header-text
+  > .text-content {
+  font-size: 18px;
+}
+
+.btn-login-30 > img {
+  width: 30px;
+}
+
+.btn-login-40 > img {
+  width: 40px;
+}
+.error-message {
+  color: var(--error);
+  padding: 5px 10px;
+  border: 1px solid var(--error);
+  border-radius: 5px;
+}
+.loading-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.loading-div > img {
+  width: 20%;
+}
+.btn-loading {
+  display: flex;
+  justify-content: center;
+}
+.btn-loading > img {
+  width: 40%;
+}
+.btn-loading.load {
+  padding: 10px 20px;
+}
+.btn-loading > img {
+  display: none;
+}
+.btn-loading.load > span {
+  display: none;
+}
+.btn-loading.load > img {
+  display: block;
+}
+@media screen and (max-width: 760px) {
+  .loading-div > img {
+    width: 100%;
+  }
+}
